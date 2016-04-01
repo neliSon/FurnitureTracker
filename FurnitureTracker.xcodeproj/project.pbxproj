@@ -14,6 +14,9 @@
 		1B8CEC951CAEF5E9005447F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8CEC931CAEF5E9005447F4 /* Main.storyboard */; };
 		1B8CEC971CAEF5E9005447F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8CEC961CAEF5E9005447F4 /* Assets.xcassets */; };
 		1B8CEC9A1CAEF5E9005447F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8CEC981CAEF5E9005447F4 /* LaunchScreen.storyboard */; };
+		1B8CECA71CAEF7CE005447F4 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CECA61CAEF7CE005447F4 /* Room.m */; };
+		1B8CECAA1CAEF8FF005447F4 /* Furnature.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CECA91CAEF8FF005447F4 /* Furnature.m */; };
+		B071A28DBD1D516223700440 /* Pods_FurnitureTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AB561445ED207F008F7EF1 /* Pods_FurnitureTracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,13 @@
 		1B8CEC961CAEF5E9005447F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B8CEC991CAEF5E9005447F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B8CEC9B1CAEF5E9005447F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8CECA51CAEF7CE005447F4 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		1B8CECA61CAEF7CE005447F4 /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
+		1B8CECA81CAEF8FF005447F4 /* Furnature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Furnature.h; sourceTree = "<group>"; };
+		1B8CECA91CAEF8FF005447F4 /* Furnature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Furnature.m; sourceTree = "<group>"; };
+		77AB561445ED207F008F7EF1 /* Pods_FurnitureTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FurnitureTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC5AED36D44D25EA8355B21 /* Pods-FurnitureTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurnitureTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-FurnitureTracker/Pods-FurnitureTracker.release.xcconfig"; sourceTree = "<group>"; };
+		F69F7F0D0978C2FA90F3BCB9 /* Pods-FurnitureTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurnitureTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FurnitureTracker/Pods-FurnitureTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +46,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B071A28DBD1D516223700440 /* Pods_FurnitureTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A48C2B04378F5CEA1BED60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77AB561445ED207F008F7EF1 /* Pods_FurnitureTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1B8CEC7B1CAEF5E9005447F4 = {
 			isa = PBXGroup;
 			children = (
 				1B8CEC861CAEF5E9005447F4 /* FurnitureTracker */,
 				1B8CEC851CAEF5E9005447F4 /* Products */,
+				2DA1CFF6EAC44B5A2796CB1F /* Pods */,
+				01A48C2B04378F5CEA1BED60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,16 +82,10 @@
 		1B8CEC861CAEF5E9005447F4 /* FurnitureTracker */ = {
 			isa = PBXGroup;
 			children = (
-				1B8CEC8A1CAEF5E9005447F4 /* AppDelegate.h */,
-				1B8CEC8B1CAEF5E9005447F4 /* AppDelegate.m */,
-				1B8CEC8D1CAEF5E9005447F4 /* MasterViewController.h */,
-				1B8CEC8E1CAEF5E9005447F4 /* MasterViewController.m */,
-				1B8CEC901CAEF5E9005447F4 /* DetailViewController.h */,
-				1B8CEC911CAEF5E9005447F4 /* DetailViewController.m */,
-				1B8CEC931CAEF5E9005447F4 /* Main.storyboard */,
-				1B8CEC961CAEF5E9005447F4 /* Assets.xcassets */,
-				1B8CEC981CAEF5E9005447F4 /* LaunchScreen.storyboard */,
-				1B8CEC9B1CAEF5E9005447F4 /* Info.plist */,
+				1B8CECA41CAEF74D005447F4 /* UI */,
+				1B8CECA21CAEF746005447F4 /* View */,
+				1B8CECA31CAEF749005447F4 /* Controller */,
+				1B8CECA11CAEF73D005447F4 /* Model */,
 				1B8CEC871CAEF5E9005447F4 /* Supporting Files */,
 			);
 			path = FurnitureTracker;
@@ -80,8 +95,59 @@
 			isa = PBXGroup;
 			children = (
 				1B8CEC881CAEF5E9005447F4 /* main.m */,
+				1B8CEC961CAEF5E9005447F4 /* Assets.xcassets */,
+				1B8CEC9B1CAEF5E9005447F4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B8CECA11CAEF73D005447F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B8CEC8A1CAEF5E9005447F4 /* AppDelegate.h */,
+				1B8CEC8B1CAEF5E9005447F4 /* AppDelegate.m */,
+				1B8CECA51CAEF7CE005447F4 /* Room.h */,
+				1B8CECA61CAEF7CE005447F4 /* Room.m */,
+				1B8CECA81CAEF8FF005447F4 /* Furnature.h */,
+				1B8CECA91CAEF8FF005447F4 /* Furnature.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1B8CECA21CAEF746005447F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1B8CECA31CAEF749005447F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B8CEC8D1CAEF5E9005447F4 /* MasterViewController.h */,
+				1B8CEC8E1CAEF5E9005447F4 /* MasterViewController.m */,
+				1B8CEC901CAEF5E9005447F4 /* DetailViewController.h */,
+				1B8CEC911CAEF5E9005447F4 /* DetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1B8CECA41CAEF74D005447F4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1B8CEC981CAEF5E9005447F4 /* LaunchScreen.storyboard */,
+				1B8CEC931CAEF5E9005447F4 /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		2DA1CFF6EAC44B5A2796CB1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F69F7F0D0978C2FA90F3BCB9 /* Pods-FurnitureTracker.debug.xcconfig */,
+				DBC5AED36D44D25EA8355B21 /* Pods-FurnitureTracker.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B8CEC9E1CAEF5E9005447F4 /* Build configuration list for PBXNativeTarget "FurnitureTracker" */;
 			buildPhases = (
+				3FB9782E8ABA3E7EE3D7B6F8 /* Check Pods Manifest.lock */,
 				1B8CEC801CAEF5E9005447F4 /* Sources */,
 				1B8CEC811CAEF5E9005447F4 /* Frameworks */,
 				1B8CEC821CAEF5E9005447F4 /* Resources */,
+				5C46CCC9854D17F51371B36D /* Embed Pods Frameworks */,
+				69CB96B923A0973FA3078EED /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -150,14 +219,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FB9782E8ABA3E7EE3D7B6F8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C46CCC9854D17F51371B36D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FurnitureTracker/Pods-FurnitureTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69CB96B923A0973FA3078EED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FurnitureTracker/Pods-FurnitureTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B8CEC801CAEF5E9005447F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8CECA71CAEF7CE005447F4 /* Room.m in Sources */,
 				1B8CEC8C1CAEF5E9005447F4 /* AppDelegate.m in Sources */,
 				1B8CEC8F1CAEF5E9005447F4 /* MasterViewController.m in Sources */,
 				1B8CEC891CAEF5E9005447F4 /* main.m in Sources */,
+				1B8CECAA1CAEF8FF005447F4 /* Furnature.m in Sources */,
 				1B8CEC921CAEF5E9005447F4 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +387,7 @@
 		};
 		1B8CEC9F1CAEF5E9005447F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F69F7F0D0978C2FA90F3BCB9 /* Pods-FurnitureTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FurnitureTracker/Info.plist;
@@ -279,6 +399,7 @@
 		};
 		1B8CECA01CAEF5E9005447F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC5AED36D44D25EA8355B21 /* Pods-FurnitureTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FurnitureTracker/Info.plist;
@@ -307,6 +428,7 @@
 				1B8CECA01CAEF5E9005447F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
